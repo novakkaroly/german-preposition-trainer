@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Német Helyhatározó Gyakorló App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Német Helyhatározó Gyakorló</h1>
+            <p class="subtitle">Wechselpräpositionen: Akkuzatív → Datív</p>
+        </header>
+
+        <main>
+            <div class="instruction">
+                <p>Írj be egy mondatot, amely egy tárgy elhelyezését írja le (pl. <code>Ich stelle den Stuhl an den Tisch.</code>), és mi átalakítjuk egy állapotot leíró monddá!</p>
+            </div>
+
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Pl. Er legt das Buch in das Regal...">Ich lege das Buch auf den Tisch.</textarea>
+                <div class="button-group">
+                    <button id="exampleBtn" class="btn btn-secondary">Példa Kérése ✨</button>
+                    <button id="transformBtn" class="btn btn-primary">Átalakít</button>
+                </div>
+            </div>
+
+            <div id="result" class="result-section" style="display: none;">
+                <div class="result-text">
+                    <p id="resultText"></p>
+                </div>
+                <div class="action-buttons">
+                    <button id="listenBtn" class="btn btn-accent">Mondat meghallgatása</button>
+                    <button id="explainBtn" class="btn btn-secondary">Magyarázat kérése ✨</button>
+                    <button id="storyBtn" class="btn btn-secondary">Történet generálása ✨</button>
+                </div>
+            </div>
+
+            <div id="explanation" class="explanation-section" style="display: none;">
+                <h3>Magyarázat:</h3>
+                <p id="explanationText"></p>
+            </div>
+
+            <div id="story" class="story-section" style="display: none;">
+                <h3>Történet:</h3>
+                <p id="storyText"></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="preposition-list">
+                <h3>Wechselpräpositionen:</h3>
+                <div class="prepositions">
+                    <span class="prep">an</span>
+                    <span class="prep">auf</span>
+                    <span class="prep">hinter</span>
+                    <span class="prep">in</span>
+                    <span class="prep">neben</span>
+                    <span class="prep">über</span>
+                    <span class="prep">unter</span>
+                    <span class="prep">vor</span>
+                    <span class="prep">zwischen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
